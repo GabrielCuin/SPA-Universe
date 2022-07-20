@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Roboto", sans-serif;
+  --header-text-color: #c4c4cc;
+  --header-contrast-text-color: white;
+  --body-text-color: #e1e1e6;
+  --button-textHover: #02799d;
+
+  font-size: 62.5%;
+}
+
+body {
+  background: url("./images/mountains-universe-1.png");
+
+  background-color: #303030;
+  font-family: var(--ff-primary);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: calc(100vh - 25rem);
+  transition: all 1s;
+}
+
+header {
+  padding: 4rem 0 4rem 7.2rem;
+}
+
+header nav {
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+}
+
+header nav::before {
+  content: "";
+  background-image: url("./images/logo.svg");
+  background-repeat: no-repeat;
+  height: 4.2rem;
+  width: 4.97rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--header-text-color);
+  font-size: 2.4rem;
+  font-weight: normal;
+  line-height: 2.2rem;
+}
+
+nav a:hover {
+  cursor: pointer;
+  color: var(--header-contrast-text-color);
+  font-weight: bold;
+}
+
+#app div {
+  transition: all 0.5s;
+}
+
+/* Home */
+.home {
+  width: 100%;
+  height: calc(100vh - 25rem);
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.home h1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 125%;
+  color: var(--body-text-color);
+}
+
+.home a {
+  text-decoration: none;
+  width: 19.5rem;
+  height: 4.8rem;
+
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 1.2rem 3.2rem;
+
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: var(--header-contrast-text-color);
+
+  transition: all 0.5s;
+}
+
+.home a:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: var(--button-textHover);
+}
+
+/* Universo */
+.universe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 25rem);
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 10.2rem;
+  margin-top: 6.3rem;
+}
+
+.universe h1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 125%;
+  text-align: left;
+  color: var(--body-text-color);
+}
+
+.universe p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 160%;
+  text-align: left;
+  color: var(--body-text-color);
+
+  width: 64.8rem;
+  height: 20.3rem;
+}
+
+/* Exploração */
+.exploration {
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 10.2rem;
+  margin-top: 6.3rem;
+}
+
+.exploration h1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  line-height: 125%;
+  text-align: left;
+  color: var(--body-text-color);
+}
+
+.exploration p {
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 160%;
+  text-align: left;
+  color: var(--body-text-color);
+
+  width: 64.8rem;
+  height: 20.3rem;
+}
